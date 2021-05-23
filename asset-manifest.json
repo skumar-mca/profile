@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8af0bc79.chunk.css",
+    "main.js": "/static/js/main.5f4be003.chunk.js",
+    "main.js.map": "/static/js/main.5f4be003.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.868c53e3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.868c53e3.js.map",
+    "static/css/2.800be05e.chunk.css": "/static/css/2.800be05e.chunk.css",
+    "static/js/2.33107b6d.chunk.js": "/static/js/2.33107b6d.chunk.js",
+    "static/js/2.33107b6d.chunk.js.map": "/static/js/2.33107b6d.chunk.js.map",
+    "static/js/3.0269f2d6.chunk.js": "/static/js/3.0269f2d6.chunk.js",
+    "static/js/3.0269f2d6.chunk.js.map": "/static/js/3.0269f2d6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.800be05e.chunk.css.map": "/static/css/2.800be05e.chunk.css.map",
+    "static/css/main.8af0bc79.chunk.css.map": "/static/css/main.8af0bc79.chunk.css.map",
+    "static/js/2.33107b6d.chunk.js.LICENSE.txt": "/static/js/2.33107b6d.chunk.js.LICENSE.txt",
+    "static/media/SunilKumar.e2979407.docx": "/static/media/SunilKumar.e2979407.docx",
+    "static/media/agra_university.2c2b63e3.png": "/static/media/agra_university.2c2b63e3.png",
+    "static/media/aws-icon.4912915a.png": "/static/media/aws-icon.4912915a.png",
+    "static/media/bitbucket.14e1ea96.png": "/static/media/bitbucket.14e1ea96.png",
+    "static/media/confluo.f9950d95.png": "/static/media/confluo.f9950d95.png",
+    "static/media/dotnet.a41590c6.png": "/static/media/dotnet.a41590c6.png",
+    "static/media/download.c995c47a.png": "/static/media/download.c995c47a.png",
+    "static/media/jenkins.564c93ec.png": "/static/media/jenkins.564c93ec.png",
+    "static/media/jquery.9d2ad5b5.png": "/static/media/jquery.9d2ad5b5.png",
+    "static/media/source_tree.3c0e9e5b.jpg": "/static/media/source_tree.3c0e9e5b.jpg",
+    "static/media/sunil.81bb3c17.png": "/static/media/sunil.81bb3c17.png",
+    "static/media/typescript.1225681e.png": "/static/media/typescript.1225681e.png",
+    "static/media/uptu.75b4d7bd.png": "/static/media/uptu.75b4d7bd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.868c53e3.js",
+    "static/css/2.800be05e.chunk.css",
+    "static/js/2.33107b6d.chunk.js",
+    "static/css/main.8af0bc79.chunk.css",
+    "static/js/main.5f4be003.chunk.js"
+  ]
+}
