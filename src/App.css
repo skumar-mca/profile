@@ -1,0 +1,57 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.skill-wrapper {
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #fafafa;
+    box-shadow: 2px 2px 6px 0px #d4d1d1;
+}
+
+.skill-wrapper:hover {
+    background: #e9e6fc;
+}
+
+.custom-list-item {
+    background-color: #eaeaea;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.custom-list-item:hover {
+    background-color: #c0c0c0;
+}
+
+.custom-list-item-title {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 2px;
+    color: #3c4bb7;
+}
+
+.custom-list-item-sub-title {
+    color: #6c757d!important;
+}
+
+.recent-project-item {
+    margin-bottom: 10px;
+}
+
+.project-a {
+    cursor: auto!important;
+    background-color: #eaeaea;
+    border-radius: 0!important;
+    border: 0 !important;
+}
+
+.project-a:hover {
+    background-color: #c0c0c0;
+}
+
+.display-inline {
+    display: inline-block;
+}
