@@ -83,7 +83,7 @@ const RecentProjects = () => {
                 <div className="custom-list-box">
                     {projectList.map((project) => {
                         return <div className="list-group recent-project-item" key={project.id}>
-                            <div className="project-a list-group-item list-group-item-action" aria-current="true">
+                            {/* <div className="project-a list-group-item list-group-item-action" aria-current="true">
                                 <div className="d-flex w-100 justify-content-between">
                                     <h5 className="mb-1 custom-list-item-title">{project.name}</h5>
                                     <small>
@@ -120,7 +120,59 @@ const RecentProjects = () => {
                                 <small>
                                     <span className="badge bg-primary me-2">{project.role}</span>
                                 </small>
+                            </div> */}
+
+                            <div className="project-a list-group-item list-group-item-action" aria-current="true">
+                                <div className="row project-row">
+
+                                    <div className="col-lg-6 col-md-6 col-sm-12 recent-project-col">
+                                        <h5 className="mb-1 custom-list-item-title">{project.name}</h5>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-12 project-stack float-end">
+                                        <small>
+                                            {
+                                                project.techStack.map((st) => {
+                                                    return <span className="badge bg-secondary me-2" key={st}>{st}</span>
+                                                })
+                                            }
+                                        </small>
+                                    </div>
+                                </div>
+                                {/* <div className="d-flex w-100 justify-content-between">
+                                    
+                                   
+                                </div> */}
+
+                                <p className="mb-1">
+                                    <small className="custom-list-item-sub-title text-muted"> {project.description}</small>
+                                </p>
+
+                                {project.rolesAndResponsibilities && <div>
+
+                                    <span className="mt-3 fw-bold">
+                                        Roles and Responsibilities include:
+                                    </span>
+
+                                    <span className="text-secondary">
+                                        <ol className="mb-3">
+                                            {project.rolesAndResponsibilities.map((resp) => {
+                                                return <li key={resp}>{resp}</li>;
+                                            })
+                                            }
+                                        </ol>
+                                    </span>
+
+                                </div>
+                                }
+
+                                <small>
+                                    <span className="badge bg-primary me-2">{project.role}</span>
+                                </small>
                             </div>
+
+
+
+
                         </div>
                     })}
                 </div>

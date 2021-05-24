@@ -16,28 +16,28 @@ const EmploymentHistory = () => {
         },
         {
             id: 2,
-            companyName: 'Icreon Communications Pvt. Ltd, Noida',
+            companyName: 'Icreon Communications Pvt. Ltd',
             designation: 'UI Architect',
             duration: `Dec'15 - Nov'20`,
             icon: icreonComp
         },
         {
             id: 3,
-            companyName: 'Confluo eSolutions Pvt. Ltd, Noida',
+            companyName: 'Confluo eSolutions Pvt. Ltd',
             designation: 'Senior Software Engineer',
             duration: `June'15 - Dec'15`,
             icon: confluoComp
         },
         {
             id: 4,
-            companyName: 'RRA Soft LLP, Ghaziabad',
+            companyName: 'RRA Soft LLP',
             designation: 'Software Engineer',
             duration: `Dec'11 - June'15`,
             icon: rraSoftComp
         },
         {
             id: 5,
-            companyName: 'IRCTC, New Delhi',
+            companyName: 'IRCTC',
             designation: 'Web Develop',
             duration: `Jan'10 - Dec'11`,
             icon: irctcComp
@@ -57,14 +57,13 @@ const EmploymentHistory = () => {
                             </div>
                             <div className="hist-sec emp-desc align-middle">
                                 <div className="custom-list-item-title">{comp.companyName}
-                                    <div className="float-end">
-                                        <small className="text-muted">{comp.duration}</small>
-                                    </div>
 
                                 </div>
                                 <div className="custom-list-item-sub-title">
                                     {comp.designation}
-
+                                    <div className="float-end">
+                                        <small className="text-muted">{comp.duration}</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>

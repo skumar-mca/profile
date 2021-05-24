@@ -55,3 +55,16 @@
 .display-inline {
     display: inline-block;
 }
+
+.recent-project-col {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.project-stack {
+    text-align: right;
+}
+
+.project-row {
+    margin-right: -40px;
+}

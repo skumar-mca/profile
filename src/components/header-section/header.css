@@ -16,6 +16,12 @@
     .profile-img-container {
         text-align: center;
     }
+    .project-stack {
+        text-align: left;
+    }
+    .project-stack {
+        margin-left: -15px;
+    }
 }
 
 .social-icon {
