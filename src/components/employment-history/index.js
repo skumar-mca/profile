@@ -57,11 +57,16 @@ const EmploymentHistory = () => {
                             </div>
                             <div className="hist-sec emp-desc align-middle">
                                 <div className="custom-list-item-title">{comp.companyName}
-
                                 </div>
                                 <div className="custom-list-item-sub-title">
                                     {comp.designation}
-                                    <div className="float-end">
+                                    <div className="float-end d-none d-lg-block d-xl-block">
+                                        <small className="text-muted">{comp.duration}</small>
+                                    </div>
+                                </div>
+
+                                <div className="row d-md-block d-sm-block d-block d-lg-none d-xl-none">
+                                    <div className="col-md-12">
                                         <small className="text-muted">{comp.duration}</small>
                                     </div>
                                 </div>

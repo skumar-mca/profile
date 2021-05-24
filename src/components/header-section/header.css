@@ -18,9 +18,13 @@
     }
     .project-stack {
         text-align: left;
-    }
-    .project-stack {
         margin-left: -15px;
+    }
+    .project-row {
+        margin-right: 0px;
+    }
+    .emp-hist-img {
+        margin-top: 10px;
     }
 }
 
