@@ -1,25 +1,58 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sunil Kumar - Profile",
+  "name": "Sunil Kumar - Profile",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
+      "src": "/assets/sunil.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "/assets/sunil.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Sunil Kumar",
+      "short_name": "Sunil Kumar",
+      "description": "Sunil Kumar - Profile",
+      "url": "/?source=pwa",
+      "icons": [
+        {
+          "src": "/assets/sunil.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "description": "MCA, 11+ Years, React, Redux, Angular, Node, MEAN, MERN",
+  "screenshots": [
+    {
+      "src": "/assets/screenshot-1.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/assets/screenshot-2.png",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/assets/screenshot-3.png",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/assets/screenshot-4.png",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    }
+  ]
 }
