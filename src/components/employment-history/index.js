@@ -56,7 +56,7 @@ const EmploymentHistory = () => {
                                 {comp.icon && <img src={comp.icon} className="emp-hist-img rounded-circle" alt={comp.name} />}
                             </div>
                             <div className="hist-sec emp-desc align-middle">
-                                <div className="custom-list-item-title">{comp.companyName}
+                                <div className="custom-list-item-title text-truncate">{comp.companyName}
                                 </div>
                                 <div className="custom-list-item-sub-title">
                                     {comp.designation}
