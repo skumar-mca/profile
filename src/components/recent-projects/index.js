@@ -10,63 +10,77 @@ const RecentProjects = () => {
     const projectList = [
         {
             id: 1,
-            name: 'Enterprise Payment Platform',
-            description: 'EPP UI is the modern UI for handling all types of payments. ',
+            name: 'File Exchange - XR',
+            description: 'File Exchange leverages four decades of transmission and translation expertise to provide the most robust data delivery and transformation tool available. With File Exchage, banks can eliminate the hassles of installing software, managing servers, designing networks.',
             role: 'UI Architect',
             techStack: ['ReactJs', 'Redux'],
             rolesAndResponsibilities: responsibilities
         },
         {
             id: 2,
+            name: 'Payments Exchange - RTP',
+            description: 'With the use of RTP, banks can now rapidly onboard new customer while providing existing customer an expanded suite of payments options, including real time payments.',
+            role: 'UI Architect',
+            techStack: ['ReactJs', 'Redux']
+        },
+        {
+            id: 3,
+            name: 'Enterprise Payment Platform',
+            description: 'EPP UI is the modern UI for handling all types of payments. ',
+            role: 'UI Architect',
+            techStack: ['ReactJs', 'Redux']
+        },
+        {
+            id: 4,
             name: 'CSCS',
             description: 'CSCS cards provide proof that individuals working on construction sites have the appropriate training and qualifications for the job they do on site. By ensuring the workforce are appropriately qualified the card plays its part in improving standards and safety on UK construction sites',
             role: 'Software Architect',
             techStack: ['Angular 8', 'NodeJs', 'AWS']
         },
         {
-            id: 3,
+            id: 5,
             name: 'ASTM',
             description: 'ASTM International, formerly known as American Society for Testing and Materials, is an international standards organization that develops and publishes voluntary consensus technical standards for a wide range of materials, products, systems, and services.',
             role: 'UI Architect',
             techStack: ['ReactJs', 'NodeJs']
         },
         {
-            id: 4,
+            id: 6,
             name: 'MyBI',
             description: 'MyBI Portal is a one stop web application which allows AT&T staff to search documents shared across multiple source systems. Users can also subscribe any document and if that document has any change, it gets notified to the user.',
             role: 'Tech Lead, UI Specialist',
             techStack: ['ReactJs', 'NodeJs']
         },
         {
-            id: 5,
+            id: 7,
             name: 'CityNet',
             description: 'NLT is one of the biggest Internet Service provider of Singapore. Users can request for new connection with their convenient time, and then they can track the progress of that request.',
             role: 'Tech Lead, UI Specialist',
             techStack: ['ReactJs', 'Redux']
         },
         {
-            id: 6,
+            id: 8,
             name: 'XPO Logistics',
             description: 'XPO Logistics is one of the largest logistics companies of US. This product is to provide a high-end system to enhance their day to day activities.',
             role: 'Senior Software Engineer',
             techStack: ['Angular', 'Web API']
         },
         {
-            id: 7,
+            id: 9,
             name: 'Amdocs Academy',
             description: 'Amdocs Academy is an innovative cloud learning portal providing a personalized role and scenario-based learning experience that improves employee performance.',
             role: 'Senior Software Engineer',
             techStack: ['Angular Js', 'Web API']
         },
         {
-            id: 8,
+            id: 10,
             name: 'Axalta Coating System',
             description: 'Axalta is the second largest powder coating solution in the world. Integrated online system, manages scheduling, exacting, dispatching and other activities.',
             role: 'Senior Software Engineer',
             techStack: ['Angular Js', 'MVC', 'Web API']
         },
         {
-            id: 9,
+            id: 11,
             name: 'erail.in',
             description: 'Service oriented website exploring the trains of Indian Railways. Train route, seat availability and other features were the USP of the service.',
             role: 'Software Engineer',

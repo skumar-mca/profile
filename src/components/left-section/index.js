@@ -17,13 +17,14 @@ const LeftSection = () => {
                             Experience in analysis, design and development of client/server, web based and n-tier applications.
                             Expert in developing web applications using
                             <b> React Js</b>,
-                            <b> Angular 2</b>,
+                            <b> Angular</b>,
                             <b> Redux</b>,
                             <b> NodeJs</b>,
                             <b> ExpressJS</b>,
                             <b> MongoDB</b>,
                             <b> JavaScript</b>,
-                            <b> TypeScript</b>
+                            <b> TypeScript</b>,
+                            <b> SCSS/SASS/CSS</b>
                         </figcaption>
                     </figure>
                 </div>

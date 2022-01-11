@@ -13,6 +13,13 @@ const PersonalInfo = () => {
             isEmail: true
         },
         {
+            id: 2,
+            name: 'LinkedIn',
+            description: 'https://www.linkedin.com/in/sunil-kumar-83146843',
+            isLink: true
+        },
+
+        {
             id: 3,
             name: 'Location',
             description: 'Noida, Uttar Pradesh, India'
@@ -30,6 +37,22 @@ const PersonalInfo = () => {
 
     ];
 
+    const generateInfoValue = (info) => {
+        if (info.isPhone) {
+            return <a href={`tel:${info.description}`}>{info.description}</a>;
+        }
+
+        if (info.isEmail) {
+            return <a href={`mailto:${info.description}`}>{info.description}</a>
+        }
+
+        if (info.isLink) {
+            return <a target="_blank" rel="noreferrer" href={`${info.description}`}>{info.description}</a>
+        }
+
+        return info.description
+    }
+
     return (
         <div className="custom-list">
             <div className="custom-list-wrapper">
@@ -42,13 +65,7 @@ const PersonalInfo = () => {
                                 {info.name}
                             </div>
                             <div className="custom-list-item-sub-title align-middle">
-                                {
-                                    info.isPhone
-                                        ? <a href={`tel:${info.description}`}>{info.description}</a>
-                                        : info.isEmail
-                                            ? <a href={`mailto:${info.description}`}>{info.description}</a >
-                                            : info.description
-                                }
+                                {generateInfoValue(info)}
                             </div>
                         </div>
                     })}
