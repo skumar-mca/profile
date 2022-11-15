@@ -1,12 +1,9 @@
 {
-  "name": "profile-1",
-  "version": "0.1.0",
+  "name": "sunil-kumar-profile",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://skumar-mca.github.io/profile",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -14,7 +11,10 @@
     "bootstrap": "5.0.0"
   },
   "devDependencies": {
-    "gh-pages": "~3.1.0"
+    "gh-pages": "~3.1.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
