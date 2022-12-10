@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 const responsibilities = [
   'Proactively research and locate necessary tools and processes to identify troublesome trends as they develop.',
   'Introduce new IT system design and testing procedures as well as quality standards to improve business performance, productivity and compliance across organization.',
@@ -175,6 +177,7 @@ const RecentProjects = () => {
                         <a
                           href={project.link}
                           target='_blank'
+                          rel='noreferrer'
                           className='bg-link me-2'
                         >
                           {project.link}
@@ -192,4 +195,4 @@ const RecentProjects = () => {
   );
 };
 
-export default RecentProjects;
+export default memo(RecentProjects);
