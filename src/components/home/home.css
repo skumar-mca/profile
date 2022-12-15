@@ -1,4 +1,8 @@
 .right-aligned-sm-icon {
-    width: 50px;
-    float: right;
+  width: 50px;
+  float: right;
+}
+
+.home-layout {
+  background-color: var(--body-bg-color);
 }

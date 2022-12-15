@@ -59,19 +59,20 @@ const GenerateInfoValue = ({ info }) => {
 
 const PersonalInfo = () => {
   return (
-    <div className='custom-list'>
+    <div className='custom-list mb-3'>
       <div className='custom-list-wrapper'>
         <div className='header-title'>Info</div>
         <div className='heading-separator'></div>
-        <div className='custom-list-box'>
+        <div className='cus-list-box'>
           {infoList.map((info) => {
             return (
-              <div className='custom-list-item align-middle' key={info.id}>
-                <div className='custom-list-item-title align-middle'>
-                  {info.name}
-                </div>
-                <div className='custom-list-item-sub-title align-middle'>
-                  <GenerateInfoValue info={info} />
+              <div className='cus-list-box-item' key={info.id}>
+                <div>
+                  <div className='custom-list-item-title'>{info.name}</div>
+
+                  <div className='custom-list-item-sub-title'>
+                    <GenerateInfoValue info={info} />
+                  </div>
                 </div>
               </div>
             );

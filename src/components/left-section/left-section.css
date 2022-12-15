@@ -1,6 +1,6 @@
 .header-title {
   font-weight: bold;
-  color: #635fb6;
+  color: var(--section-title-color);
   font-size: 1em;
   text-align: center;
   margin-top: 30px;
@@ -17,12 +17,11 @@
   margin: 10px 0px 20px 0px;
   padding: 5px 10px 5px 10px;
   border-radius: 4px;
-  background: #fafafa;
-  box-shadow: 2px 2px 6px 0px #d4d1d1;
+  background-color: var(--light-gray-alt);
 }
 
 .content-box:hover {
-  background: #e9e6fc;
+  background: var(--hover-bg-color);
 }
 
 .emp-history {
@@ -60,4 +59,12 @@
 
 .project-link a {
   text-decoration: none;
+}
+
+.theme-dark .content-box {
+  background-color: var(--drk-theme-bg-alt) !important;
+}
+
+.theme-dark .content-box:hover {
+  background-color: var(--drk-theme-hover) !important;
 }

@@ -21,7 +21,7 @@ const skillList = [
   },
   {
     id: 2,
-    name: 'Angular 2+',
+    name: 'Angular',
     icon: angularImg,
     duration: 6,
     since: 2015,
@@ -147,11 +147,11 @@ const SkillList = () => {
       <div className='custom-list-wrapper'>
         <div className='header-title'>Skills</div>
         <div className='heading-separator'></div>
-        <div className='custom-list-box'>
+        <div className='cus-list-box'>
           {skillsList.map((skill) => {
             return (
-              <div className='custom-list-item' key={skill.id}>
-                <div className='col-md-2 align-middle'>
+              <div className='cus-list-box-item' key={skill.id}>
+                <div className='cus-list-box-icon align-middle'>
                   {skill.icon && (
                     <img
                       src={skill.icon}
@@ -160,7 +160,7 @@ const SkillList = () => {
                     />
                   )}
                 </div>
-                <div className='col-md-10 align-middle'>
+                <div className='w-100 align-middle'>
                   <div className='custom-list-item-title'>{skill.name}</div>
                   <div className='custom-list-item-sub-title'>
                     <div className='progress'>

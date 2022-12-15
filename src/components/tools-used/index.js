@@ -37,22 +37,25 @@ const ToolsUsedList = () => {
       <div className='custom-list-wrapper'>
         <div className='header-title'>Tools Used</div>
         <div className='heading-separator'></div>
-        <div className='custom-list-box'>
+        <div className='cus-list-box'>
           {toolsList.map((tool) => {
             return (
-              <div className='custom-list-item align-middle' key={tool.id}>
-                <div className='custom-list-item-title align-middle'>
-                  {tool.name}
+              <div className='cus-list-box-item' key={tool.id}>
+                <div className='cus-list-box-icon'>
                   {tool.icon && (
                     <img
                       src={tool.icon}
-                      className='right-aligned-sm-icon'
+                      className='emp-hist-img rounded-circle'
                       alt={tool.name}
                     />
                   )}
                 </div>
-                <div className='custom-list-item-sub-title align-middle'>
-                  {tool.description}
+                <div className='hist-sec emp-desc align-middle'>
+                  <div className='custom-list-item-title'>{tool.name}</div>
+
+                  <div className='custom-list-item-sub-title'>
+                    {tool.description}
+                  </div>
                 </div>
               </div>
             );

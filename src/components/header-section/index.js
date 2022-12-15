@@ -1,13 +1,20 @@
-import { memo } from 'react';
+import { memo, useContext } from 'react';
 import downloadImg from '../../assets/download.png';
 import facebookImg from '../../assets/facebook.png';
 import linkedInImg from '../../assets/linkedin.png';
 import npmImg from '../../assets/npm.png';
 import profileImg from '../../assets/sunil.png';
 import resumeDox from '../../assets/SunilKumar.docx';
+import { THEME_CONSTANT } from '../../utils/app-constants';
+import { AppContext } from '../../utils/app-context';
+import IconHalfCircle from '../icons/half-circle-icon';
+
 import './header.css';
 
-const HeaderSection = () => {
+const HeaderSection = (props) => {
+  const { onThemeChange } = props;
+  const appContext = useContext(AppContext);
+
   return (
     <div className='header-section'>
       <div className='p-3 mb-2 header-banner text-white'>
@@ -79,6 +86,23 @@ const HeaderSection = () => {
                       alt='download resume'
                     />
                   </a>
+                </div>
+
+                <div className='theme-switch'>
+                  <button
+                    className='btn btn-clear'
+                    onClick={onThemeChange}
+                    title='Change Theme'
+                  >
+                    <span className='mode-text'>Dark Mode</span>
+                    <IconHalfCircle
+                      fillColor={
+                        appContext.theme === THEME_CONSTANT.DARK_THEME
+                          ? 'white'
+                          : 'black'
+                      }
+                    />
+                  </button>
                 </div>
               </div>
             </h3>

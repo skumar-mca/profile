@@ -1,29 +1,44 @@
-import { memo } from 'react';
+import { memo, useEffect, useState } from 'react';
+import { THEME_CONSTANT } from '../../utils/app-constants';
+import { THEME } from '../../utils/util';
 import CertificationsList from '../certifications';
 import HeaderSection from '../header-section';
 import LeftSection from '../left-section';
 import PersonalInfo from '../personal-info';
 import QualificationList from '../qualifications';
-import SkillList from '../skills';
-import ToolsUsedList from '../tools-used';
 import './home.css';
 
 const Home = () => {
+  const [theme, setTheme] = useState(THEME_CONSTANT.LIGHT_THEME);
+
+  const onThemeChange = () => {
+    const themeValue =
+      theme === THEME_CONSTANT.LIGHT_THEME
+        ? THEME_CONSTANT.DARK_THEME
+        : THEME_CONSTANT.LIGHT_THEME;
+    THEME.setTheme(themeValue);
+    setTheme(() => themeValue);
+  };
+
+  useEffect(() => {
+    setTheme(() => THEME.getTheme());
+  }, []);
+
   return (
-    <div className='home-layout'>
+    <div className={`home-layout theme-${theme}`}>
       <div className='row'>
         <div className='col-md-12'>
-          <HeaderSection />
+          <HeaderSection onThemeChange={onThemeChange} />
         </div>
-        <div className='col-md-8'>
+
+        <div className='col-lg-8 col-md-12 left-section'>
           <LeftSection />
         </div>
 
-        <div className='col-md-4'>
-          <SkillList />
+        <div className='col-lg-4 col-md-12'>
           <CertificationsList />
           <QualificationList />
-          <ToolsUsedList />
+          {/* <ToolsUsedList /> */}
           <PersonalInfo />
         </div>
       </div>

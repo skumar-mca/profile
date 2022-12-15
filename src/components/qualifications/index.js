@@ -22,22 +22,25 @@ const QualificationList = () => {
       <div className='custom-list-wrapper'>
         <div className='header-title'>Qualifications</div>
         <div className='heading-separator'></div>
-        <div className='custom-list-box'>
+        <div className='cus-list-box'>
           {qualificationList.map((qual) => {
             return (
-              <div className='custom-list-item' key={qual.id}>
-                <div className='custom-list-item-title'>
-                  {qual.name}
+              <div className='cus-list-box-item' key={qual.id}>
+                <div className='cus-list-box-icon'>
                   {qual.icon && (
                     <img
                       src={qual.icon}
-                      className='right-aligned-sm-icon'
+                      className='emp-hist-img rounded-circle'
                       alt={qual.name}
                     />
                   )}
                 </div>
-                <div className='custom-list-item-sub-title'>
-                  {qual.certifiedBy}
+                <div className='hist-sec emp-desc align-middle'>
+                  <div className='custom-list-item-title'>{qual.name}</div>
+
+                  <div className='custom-list-item-sub-title'>
+                    {qual.certifiedBy}
+                  </div>
                 </div>
               </div>
             );
