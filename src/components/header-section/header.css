@@ -43,6 +43,7 @@
 
 .theme-switch {
   text-align: right;
+  margin-top: 5px;
 }
 
 .theme-switch .btn-clear {

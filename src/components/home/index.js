@@ -28,7 +28,11 @@ const Home = () => {
     <div className={`home-layout theme-${theme}`}>
       <div className='row'>
         <div className='col-md-12'>
-          <HeaderSection onThemeChange={onThemeChange} />
+          <HeaderSection
+            onThemeChange={onThemeChange}
+            theme={theme}
+            key={theme}
+          />
         </div>
 
         <div className='col-lg-8 col-md-12 left-section'>

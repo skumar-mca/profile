@@ -1,4 +1,4 @@
-import { memo, useContext } from 'react';
+import { memo } from 'react';
 import downloadImg from '../../assets/download.png';
 import facebookImg from '../../assets/facebook.png';
 import linkedInImg from '../../assets/linkedin.png';
@@ -6,14 +6,12 @@ import npmImg from '../../assets/npm.png';
 import profileImg from '../../assets/sunil.png';
 import resumeDox from '../../assets/SunilKumar.docx';
 import { THEME_CONSTANT } from '../../utils/app-constants';
-import { AppContext } from '../../utils/app-context';
 import IconHalfCircle from '../icons/half-circle-icon';
 
 import './header.css';
 
 const HeaderSection = (props) => {
-  const { onThemeChange } = props;
-  const appContext = useContext(AppContext);
+  const { onThemeChange, theme } = props;
 
   return (
     <div className='header-section'>
@@ -94,12 +92,14 @@ const HeaderSection = (props) => {
                     onClick={onThemeChange}
                     title='Change Theme'
                   >
-                    <span className='mode-text'>Dark Mode</span>
+                    <span className='mode-text'>
+                      View in{' '}
+                      {theme === THEME_CONSTANT.DARK_THEME ? 'Light' : 'Dark'}{' '}
+                      Theme
+                    </span>
                     <IconHalfCircle
                       fillColor={
-                        appContext.theme === THEME_CONSTANT.DARK_THEME
-                          ? 'white'
-                          : 'black'
+                        theme === THEME_CONSTANT.DARK_THEME ? 'white' : 'black'
                       }
                     />
                   </button>

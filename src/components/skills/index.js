@@ -1,5 +1,6 @@
 import { memo, useEffect, useState } from 'react';
 import angularImg from '../../assets/angular.png';
+import bootStrapImg from '../../assets/bootstrap.png';
 import cssImg from '../../assets/css.png';
 import expressJsImg from '../../assets/express.png';
 import javascriptImg from '../../assets/javascript.png';
@@ -16,7 +17,7 @@ const skillList = [
     icon: reactImg,
     duration: 6,
     since: 2015,
-    exp: 0,
+    exp: 8,
     percent: 0
   },
   {
@@ -25,70 +26,79 @@ const skillList = [
     icon: angularImg,
     duration: 6,
     since: 2015,
-    exp: 0,
+    exp: 8,
     percent: 0
   },
   {
     id: 3,
-    name: 'Node Js',
-    icon: nodeJsImg,
-    duration: 8,
-    since: 2013,
-    exp: 0,
-    percent: 0
-  },
-  {
-    id: 4,
     name: 'JavaScript',
     icon: javascriptImg,
     duration: 11,
     since: 2010,
-    exp: 0,
+    exp: 13,
     percent: 0
   },
   {
-    id: 5,
+    id: 4,
     name: 'TypeScript',
     icon: typescriptImg,
     duration: 4,
     since: 2015,
-    exp: 0,
+    exp: 6,
     percent: 0
   },
   {
-    id: 6,
-    name: 'JQuery',
-    icon: jqueryImg,
-    duration: 10,
-    since: 2011,
-    exp: 0,
-    percent: 0
-  },
-  {
-    id: 7,
-    name: 'Express Js',
-    icon: expressJsImg,
-    duration: 8,
-    since: 2013,
-    exp: 0,
-    percent: 0
-  },
-  {
-    id: 8,
-    name: 'MongoDB',
-    icon: mongoDBImg,
-    duration: 5,
-    since: 2015,
-    exp: 0,
-    percent: 0
-  },
-  {
-    id: 8,
+    id: 5,
     name: 'CSS/SCSS',
     icon: cssImg,
     duration: 5,
     since: 2015,
-    exp: 0,
+    exp: 8,
+    percent: 0
+  },
+  {
+    id: 6,
+    name: 'Bootstrap',
+    icon: bootStrapImg,
+    duration: 5,
+    since: 2015,
+    exp: 10,
+    percent: 0
+  },
+  {
+    id: 7,
+    name: 'JQuery',
+    icon: jqueryImg,
+    duration: 10,
+    since: 2011,
+    exp: 5,
+    percent: 0
+  },
+  {
+    id: 8,
+    name: 'Node Js',
+    icon: nodeJsImg,
+    duration: 5,
+    since: 2013,
+    exp: 5,
+    percent: 0
+  },
+  {
+    id: 9,
+    name: 'Express Js',
+    icon: expressJsImg,
+    duration: 8,
+    since: 2013,
+    exp: 5,
+    percent: 0
+  },
+  {
+    id: 10,
+    name: 'MongoDB',
+    icon: mongoDBImg,
+    duration: 5,
+    since: 2015,
+    exp: 5,
     percent: 0
   }
 
@@ -103,24 +113,9 @@ const skillList = [
   // }
 ];
 
-const careerStartedFrom = 2010;
-const calculateExp = (since) => {
-  const dt2 = new Date();
-  const dt1 = new Date(since, 1, 1);
-  return calculateGapBetweenTwoDates(dt2, dt1);
-};
-
 const calculatePercent = (exp) => {
-  const dt2 = new Date();
-  const dt1 = new Date(careerStartedFrom, 1, 1);
-  const totalExp = calculateGapBetweenTwoDates(dt2, dt1);
+  const totalExp = 12;
   return Math.abs(Math.round((exp / totalExp) * 100));
-};
-
-const calculateGapBetweenTwoDates = (dt2, dt1) => {
-  let diff = (dt2.getTime() - dt1.getTime()) / 1000;
-  diff /= 60 * 60 * 24;
-  return Math.abs(Math.round(diff / 365.25));
 };
 
 const SkillList = () => {
@@ -128,9 +123,7 @@ const SkillList = () => {
 
   const updateSkillSetArray = () => {
     skillsList.map((skill) => {
-      const yearGap = calculateExp(skill.since);
-      skill.exp = yearGap;
-      skill.percent = calculatePercent(yearGap);
+      skill.percent = calculatePercent(skill.exp);
       return skill;
     });
 

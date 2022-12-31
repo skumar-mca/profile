@@ -3,6 +3,7 @@ import angularImg from '../../assets/angular.png';
 import awsImg from '../../assets/aws.png';
 import cssImg from '../../assets/css.png';
 import dotNetAPIImg from '../../assets/dotnet_api.png';
+import javascriptImg from '../../assets/javascript.png';
 import jqueryImg from '../../assets/jquery.png';
 import nodeJsImg from '../../assets/node.png';
 import reactImg from '../../assets/react-js.png';
@@ -64,7 +65,7 @@ const projectList = [
     description:
       'MyBI Portal is a one stop web application which allows AT&T staff to search documents shared across multiple source systems. Users can also subscribe any document and if that document has any change, it gets notified to the user.',
     role: 'Tech Lead, UI Specialist',
-    techStack: ['ReactJs', 'NodeJs', 'CSS']
+    techStack: ['ReactJs', 'NodeJs', 'JavaScript', 'CSS']
   },
   {
     id: 7,
@@ -88,7 +89,7 @@ const projectList = [
     description:
       'Amdocs Academy is an innovative cloud learning portal providing a personalized role and scenario-based learning experience that improves employee performance.',
     role: 'Senior Software Engineer',
-    techStack: ['Angular Js', 'Web API', 'CSS']
+    techStack: ['Angular Js', 'JavaScript', 'Web API', 'CSS']
   },
   {
     id: 10,
@@ -96,7 +97,7 @@ const projectList = [
     description:
       'Axalta is the second largest powder coating solution in the world. Integrated online system, manages scheduling, exacting, dispatching and other activities.',
     role: 'Senior Software Engineer',
-    techStack: ['Angular Js', 'Web API', 'CSS']
+    techStack: ['Angular Js', 'JavaScript', 'Web API', 'CSS']
   },
   {
     id: 11,
@@ -104,7 +105,7 @@ const projectList = [
     description:
       'Service oriented website exploring the trains of Indian Railways. Train route, seat availability and other features were the USP of the service.',
     role: 'Software Engineer',
-    techStack: ['JQuery', 'CSS']
+    techStack: ['JQuery', 'JavaScript', 'CSS']
   },
   {
     id: 12,
@@ -112,7 +113,7 @@ const projectList = [
     description:
       'UI-Geeks is an online learning platform. Learn Core and Advanced Concepts, Blogs, Summary of JavaScript, React, Angular, SCSS, CSS.',
     role: 'Owner',
-    techStack: ['ReactJs', 'TypeScript', 'CSS'],
+    techStack: ['ReactJs', 'TypeScript', 'SCSS'],
     link: 'https://ui-geeks.in'
   }
 ];
@@ -141,6 +142,9 @@ const getTechImage = (tech) => {
     case 'JQuery':
       return jqueryImg;
 
+    case 'JavaScript':
+      return javascriptImg;
+
     case 'TypeScript':
       return typescriptImg;
 
@@ -159,70 +163,69 @@ const RecentProjects = () => {
         <div className='project-grid'>
           {projectList.map((project, index) => {
             return (
-              <>
-                <div className='project-item' key={project.id}>
-                  <div>
-                    <div className='project-name'>
-                      {project.name}
-                      {project.link && (
-                        <>
-                          <small className='project-link'>
-                            <a
-                              href={project.link}
-                              target='_blank'
-                              rel='noreferrer'
-                              className='bg-link me-2'
-                            >
-                              {project.link}
-                            </a>
-                          </small>
-                        </>
-                      )}
-                    </div>
-                    <div className='text-muted project-desc'>
-                      {project.description}
-                    </div>
-
-                    {index === 0 && (
-                      <div className='mt-3'>
-                        <div className='project-name text-muted'>
-                          Roles and Responsibilities include:
-                        </div>
-
-                        <div className='text-muted project-desc'>
-                          <ol className='mb-3'>
-                            {project.rolesAndResponsibilities.map((resp) => {
-                              return <li key={resp}>{resp}</li>;
-                            })}
-                          </ol>
-                        </div>
-                      </div>
+              <div className='project-item' key={project.id}>
+                <div>
+                  <div className='project-name'>
+                    {project.name}
+                    {project.link && (
+                      <>
+                        <small className='project-link'>
+                          <a
+                            href={project.link}
+                            target='_blank'
+                            rel='noreferrer'
+                            className='bg-link me-2'
+                          >
+                            {project.link}
+                          </a>
+                        </small>
+                      </>
                     )}
                   </div>
-                  <div className='project-split-box'>
-                    <div className='project-split'>
-                      <div className='project-split-right'>
-                        {project.role}
-                        <span className='project-tech-row'>
-                          <small>
-                            {project.techStack.map((st) => {
-                              return (
-                                <span className='me-2' key={st}>
-                                  <img
-                                    src={getTechImage(st)}
-                                    className='tech-icon'
-                                    title={st}
-                                  />
-                                </span>
-                              );
-                            })}
-                          </small>
-                        </span>
+                  <div className='project-desc'>{project.description}</div>
+
+                  {index === 0 && (
+                    <div className='mt-3'>
+                      <div className='project-name text-muted'>
+                        Roles and Responsibilities include:
                       </div>
+
+                      <div className='project-desc'>
+                        <ol className='mb-3'>
+                          {project.rolesAndResponsibilities.map((resp) => {
+                            return <li key={`${resp}-${index}`}>{resp}</li>;
+                          })}
+                        </ol>
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <div className='project-split-box'>
+                  <div className='project-split'>
+                    <div className='project-split-right'>
+                      {project.role}
+                      <span className='project-tech-row'>
+                        <small>
+                          {project.techStack.map((st, ind) => {
+                            return (
+                              <span
+                                className='me-2'
+                                key={`${st}-${index}-${ind}`}
+                              >
+                                <img
+                                  src={getTechImage(st)}
+                                  className='tech-icon'
+                                  title={st}
+                                />
+                              </span>
+                            );
+                          })}
+                        </small>
+                      </span>
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
