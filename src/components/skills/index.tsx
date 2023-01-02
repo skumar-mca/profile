@@ -1,20 +1,11 @@
-import { memo, useEffect, useState } from 'react';
-import angularImg from '../../assets/angular.png';
-import bootStrapImg from '../../assets/bootstrap.png';
-import cssImg from '../../assets/css.png';
-import expressJsImg from '../../assets/express.png';
-import javascriptImg from '../../assets/javascript.png';
-import jqueryImg from '../../assets/jquery.png';
-import mongoDBImg from '../../assets/mongodb.png';
-import nodeJsImg from '../../assets/node.png';
-import reactImg from '../../assets/react.png';
-import typescriptImg from '../../assets/typescript.png';
-import './skill.css';
+import React, { memo, useEffect, useState } from 'react';
+import './skill.scss';
+
 const skillList = [
   {
     id: 1,
     name: 'React Js + Redux',
-    icon: reactImg,
+    icon: 'assets/react.png',
     duration: 6,
     since: 2015,
     exp: 8,
@@ -23,7 +14,7 @@ const skillList = [
   {
     id: 2,
     name: 'Angular',
-    icon: angularImg,
+    icon: 'assets/angular.png',
     duration: 6,
     since: 2015,
     exp: 8,
@@ -32,7 +23,7 @@ const skillList = [
   {
     id: 3,
     name: 'JavaScript',
-    icon: javascriptImg,
+    icon: 'assets/javascript.png',
     duration: 11,
     since: 2010,
     exp: 13,
@@ -41,7 +32,7 @@ const skillList = [
   {
     id: 4,
     name: 'TypeScript',
-    icon: typescriptImg,
+    icon: 'assets/typescript.png',
     duration: 4,
     since: 2015,
     exp: 6,
@@ -50,7 +41,7 @@ const skillList = [
   {
     id: 5,
     name: 'CSS/SCSS',
-    icon: cssImg,
+    icon: 'assets/css.png',
     duration: 5,
     since: 2015,
     exp: 8,
@@ -59,7 +50,7 @@ const skillList = [
   {
     id: 6,
     name: 'Bootstrap',
-    icon: bootStrapImg,
+    icon: 'assets/angular.png',
     duration: 5,
     since: 2015,
     exp: 10,
@@ -68,7 +59,7 @@ const skillList = [
   {
     id: 7,
     name: 'JQuery',
-    icon: jqueryImg,
+    icon: 'assets/jquery.png',
     duration: 10,
     since: 2011,
     exp: 5,
@@ -77,7 +68,7 @@ const skillList = [
   {
     id: 8,
     name: 'Node Js',
-    icon: nodeJsImg,
+    icon: 'assets/node.png',
     duration: 5,
     since: 2013,
     exp: 5,
@@ -86,7 +77,7 @@ const skillList = [
   {
     id: 9,
     name: 'Express Js',
-    icon: expressJsImg,
+    icon: 'assets/express.png',
     duration: 8,
     since: 2013,
     exp: 5,
@@ -95,7 +86,7 @@ const skillList = [
   {
     id: 10,
     name: 'MongoDB',
-    icon: mongoDBImg,
+    icon: 'assets/mongodb.png',
     duration: 5,
     since: 2015,
     exp: 5,
@@ -113,7 +104,7 @@ const skillList = [
   // }
 ];
 
-const calculatePercent = (exp) => {
+const calculatePercent = (exp: any) => {
   const totalExp = 12;
   return Math.abs(Math.round((exp / totalExp) * 100));
 };
@@ -161,9 +152,9 @@ const SkillList = () => {
                         className='progress-bar'
                         role='progressbar'
                         style={{ width: `${skill.percent}%` }}
-                        aria-valuenow='25'
-                        aria-valuemin='0'
-                        aria-valuemax='100'
+                        aria-valuenow={25}
+                        aria-valuemin={0}
+                        aria-valuemax={100}
                       >
                         {skill.exp}+ years
                       </div>

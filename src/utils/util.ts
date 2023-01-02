@@ -6,7 +6,7 @@ export const THEME = {
       localStorage.getItem(THEME_CONSTANT.KEY) || THEME_CONSTANT.LIGHT_THEME
     );
   },
-  setTheme: (themeValue) => {
+  setTheme: (themeValue: string) => {
     localStorage.setItem(THEME_CONSTANT.KEY, themeValue);
   }
 };

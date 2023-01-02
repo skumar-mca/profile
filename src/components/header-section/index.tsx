@@ -1,16 +1,10 @@
-import { memo } from 'react';
-import downloadImg from '../../assets/download.png';
-import facebookImg from '../../assets/facebook.png';
-import linkedInImg from '../../assets/linkedin.png';
-import npmImg from '../../assets/npm.png';
-import profileImg from '../../assets/sunil.png';
-import resumeDox from '../../assets/SunilKumar.docx';
+import React, { memo } from 'react';
 import { THEME_CONSTANT } from '../../utils/app-constants';
 import IconHalfCircle from '../icons/half-circle-icon';
 
-import './header.css';
+import './header.scss';
 
-const HeaderSection = (props) => {
+const HeaderSection = (props: any) => {
   const { onThemeChange, theme } = props;
 
   return (
@@ -19,7 +13,7 @@ const HeaderSection = (props) => {
         <div className='row'>
           <div className='col-lg-2 col-md-5 col-sm-12 profile-img-container'>
             <img
-              src={profileImg}
+              src='assets/sunil.png'
               className='profile-img rounded-circle'
               alt='Sunil Kumar'
             />
@@ -40,7 +34,7 @@ const HeaderSection = (props) => {
                     <img
                       alt='linkedin profile'
                       className='rounded-img social-icon'
-                      src={linkedInImg}
+                      src='assets/linkedin.png'
                     />
                   </a>
                   <a
@@ -53,7 +47,7 @@ const HeaderSection = (props) => {
                     <img
                       alt='facebook profile'
                       className='rounded-img social-icon'
-                      src={facebookImg}
+                      src='assets/facebook.png'
                     />
                   </a>
                   <a
@@ -66,20 +60,20 @@ const HeaderSection = (props) => {
                     <img
                       alt='npm profile'
                       className='rounded-img social-icon'
-                      src={npmImg}
+                      src='assets/npm.png'
                     />
                   </a>
 
                   <a
                     className='social-name '
                     download=''
-                    href={resumeDox}
+                    href='assets/SunilKumar.docx'
                     target='_blank'
                     rel='noreferrer'
                   >
                     <img
                       className='rounded-img social-icon'
-                      src={downloadImg}
+                      src='assets/download.png'
                       title='Download resume'
                       alt='download resume'
                     />

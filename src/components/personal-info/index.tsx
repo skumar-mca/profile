@@ -1,3 +1,4 @@
+import React from 'react';
 import { SOCIAL_URL } from '../../utils/app-constants';
 
 const infoList = [
@@ -37,7 +38,7 @@ const infoList = [
   }
 ];
 
-const GenerateInfoValue = ({ info }) => {
+const GenerateInfoValue = ({ info }: any) => {
   if (info.isPhone) {
     return <a href={`tel:${info.description}`}>{info.description}</a>;
   }

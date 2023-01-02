@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import BaseIcon from './base-icons';
 import { IconPath } from './icons.path';
 
-const IconFacebook = (props) => {
+const IconFacebook = (props: any) => {
   return <BaseIcon {...props} d={IconPath.facebook} />;
 };
 

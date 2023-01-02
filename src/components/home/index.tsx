@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import { THEME_CONSTANT } from '../../utils/app-constants';
 import { THEME } from '../../utils/util';
 import CertificationsList from '../certifications';
@@ -6,7 +6,7 @@ import HeaderSection from '../header-section';
 import LeftSection from '../left-section';
 import PersonalInfo from '../personal-info';
 import QualificationList from '../qualifications';
-import './home.css';
+import './home.scss';
 
 const Home = () => {
   const [theme, setTheme] = useState(THEME_CONSTANT.LIGHT_THEME);

@@ -1,8 +1,8 @@
-import './App.css';
+import React from 'react';
+import './App.scss';
 import Home from './components/home';
 import useDeviceType from './hooks/use-device-type';
-
-function App() {
+const App = () => {
   const deviceType = useDeviceType();
 
   return (
@@ -10,6 +10,6 @@ function App() {
       <Home />
     </div>
   );
-}
+};
 
 export default App;

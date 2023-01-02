@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BaseIcon = (props) => {
+const BaseIcon = (props: any) => {
   const {
     width = 16,
     height = 16,

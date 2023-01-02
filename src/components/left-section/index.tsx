@@ -1,8 +1,8 @@
-import { memo } from 'react';
+import React, { memo } from 'react';
 import EmploymentHistory from '../employment-history';
 import RecentProjects from '../recent-projects';
 import SkillList from '../skills';
-import './left-section.css';
+import './left-section.scss';
 
 const LeftSection = () => {
   return (

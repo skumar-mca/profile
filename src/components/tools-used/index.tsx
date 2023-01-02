@@ -1,33 +1,29 @@
-import { memo } from 'react';
-import bitbucketImg from '../../assets/bitbucket.png';
-import gitImg from '../../assets/git.png';
-import jenkinsImg from '../../assets/jenkins.png';
-import sourceTreeImg from '../../assets/source_tree.png';
+import React, { memo } from 'react';
 
 const toolsList = [
   {
     id: 1,
     name: 'Git/GitHub',
     description: 'Most widely used modern version control system.',
-    icon: gitImg
+    icon: 'assets/git.png'
   },
   {
     id: 2,
     name: 'Atlassian Source Tree',
     description: 'Graphical Interface for GIT',
-    icon: sourceTreeImg
+    icon: 'assets/source_tree.png'
   },
   {
     id: 3,
     name: 'Bitbucket',
     description: 'Plan projects, collaborate on code, test, and deploy.',
-    icon: bitbucketImg
+    icon: 'assets/bitbucket.png'
   },
   {
     id: 4,
     name: 'Jenkins',
     description: 'The leading open source automation server.',
-    icon: jenkinsImg
+    icon: 'assets/jenkins.png'
   }
 ];
 

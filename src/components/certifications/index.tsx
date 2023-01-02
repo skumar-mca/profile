@@ -1,11 +1,10 @@
-import { memo } from 'react';
-import awsImg from '../../assets/aws-icon.png';
+import React, { memo } from 'react';
 const certificationList = [
   {
     id: 1,
     name: 'AWS Developer Associate',
     certifiedBy: 'AWS',
-    icon: awsImg
+    icon: 'assets/aws-icon.png'
   },
   {
     id: 2,

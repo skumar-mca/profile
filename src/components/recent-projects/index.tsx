@@ -1,14 +1,4 @@
-import { memo } from 'react';
-import angularImg from '../../assets/angular.png';
-import awsImg from '../../assets/aws.png';
-import cssImg from '../../assets/css.png';
-import dotNetAPIImg from '../../assets/dotnet_api.png';
-import javascriptImg from '../../assets/javascript.png';
-import jqueryImg from '../../assets/jquery.png';
-import nodeJsImg from '../../assets/node.png';
-import reactImg from '../../assets/react-js.png';
-import reduxImg from '../../assets/redux.png';
-import typescriptImg from '../../assets/typescript.png';
+import React, { memo } from 'react';
 
 const responsibilities = [
   'Proactively research and locate necessary tools and processes to identify troublesome trends as they develop.',
@@ -118,39 +108,39 @@ const projectList = [
   }
 ];
 
-const getTechImage = (tech) => {
+const getTechImage = (tech: string) => {
   switch (tech) {
     case 'ReactJs':
-      return reactImg;
+      return 'assets/react-js.png';
 
     case 'Redux':
-      return reduxImg;
+      return 'assets/redux.png';
 
     case 'Angular Js':
     case 'Angular':
-      return angularImg;
+      return 'assets/angular.png';
 
     case 'NodeJs':
-      return nodeJsImg;
+      return 'assets/node.png';
 
     case 'AWS':
-      return awsImg;
+      return 'assets/aws.png';
 
     case 'Web API':
-      return dotNetAPIImg;
+      return 'assets/dotnet_api.png';
 
     case 'JQuery':
-      return jqueryImg;
+      return 'assets/jquery.png';
 
     case 'JavaScript':
-      return javascriptImg;
+      return 'assets/javascript.png';
 
     case 'TypeScript':
-      return typescriptImg;
+      return 'assets/typescript.png';
 
     case 'CSS':
     case 'SCSS':
-      return cssImg;
+      return 'assets/css.png';
   }
 };
 
@@ -192,9 +182,10 @@ const RecentProjects = () => {
 
                       <div className='project-desc'>
                         <ol className='mb-3'>
-                          {project.rolesAndResponsibilities.map((resp) => {
-                            return <li key={`${resp}-${index}`}>{resp}</li>;
-                          })}
+                          {project.rolesAndResponsibilities &&
+                            project.rolesAndResponsibilities.map((resp) => {
+                              return <li key={`${resp}-${index}`}>{resp}</li>;
+                            })}
                         </ol>
                       </div>
                     </div>

@@ -1,18 +1,17 @@
-import { memo } from 'react';
-import agraUnivImg from '../../assets/agra_university.png';
-import uptuImg from '../../assets/uptu.png';
+import React, { memo } from 'react';
+
 const qualificationList = [
   {
     id: 1,
     name: 'Master of Computer Applications',
     certifiedBy: 'Uttar Pradesh Technical University (UPTU)',
-    icon: uptuImg
+    icon: 'assets/uptu.png'
   },
   {
     id: 2,
     name: 'Bachelor of Computer Applications',
     certifiedBy: 'Agra University',
-    icon: agraUnivImg
+    icon: 'assets/agra_university.png'
   }
 ];
 

@@ -1,9 +1,4 @@
-import { memo } from 'react';
-import confluoComp from '../../assets/confluo.png';
-import fiservComp from '../../assets/fiserv.png';
-import icreonComp from '../../assets/icreon.png';
-import irctcComp from '../../assets/irctc.png';
-import rraSoftComp from '../../assets/rrasoft.png';
+import React, { memo } from 'react';
 
 const employmentHistoryList = [
   {
@@ -11,35 +6,35 @@ const employmentHistoryList = [
     companyName: 'Fiserv',
     designation: 'UI Architect',
     duration: `Nov, 2020 - Present`,
-    icon: fiservComp
+    icon: 'assets/fiserv.png'
   },
   {
     id: 2,
     companyName: 'Icreon Communications Pvt. Ltd',
     designation: 'UI Architect',
     duration: `Dec, 2015 - Nov, 2020`,
-    icon: icreonComp
+    icon: 'assets/icreon.png'
   },
   {
     id: 3,
     companyName: 'Confluo eSolutions Pvt. Ltd',
     designation: 'Senior Software Engineer',
     duration: `June, 2015 - Dec, 2015`,
-    icon: confluoComp
+    icon: 'assets/confluo.png'
   },
   {
     id: 4,
     companyName: 'RRA Soft LLP',
     designation: 'Software Engineer',
     duration: `Dec, 2011 - June, 2015`,
-    icon: rraSoftComp
+    icon: 'assets/rrasoft.png'
   },
   {
     id: 5,
     companyName: 'IRCTC',
     designation: 'Web Developer',
     duration: `Jan, 2010 - Dec, 2011`,
-    icon: irctcComp
+    icon: 'assets/irctc.png'
   }
 ];
 
@@ -59,7 +54,7 @@ const EmploymentHistory = () => {
                     <img
                       src={comp.icon}
                       className='emp-hist-img rounded-circle'
-                      alt={comp.name}
+                      alt={comp.companyName}
                     />
                   )}
                 </div>
