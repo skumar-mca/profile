@@ -1,18 +1,7 @@
 import React, { memo } from 'react';
-const certificationList = [
-  {
-    id: 1,
-    name: 'AWS Developer Associate',
-    certifiedBy: 'AWS',
-    icon: 'assets/aws-icon.png'
-  },
-  {
-    id: 2,
-    name: 'Advance Diploma in Computer Software Technology (ADCST)',
-    certifiedBy: 'ET&T, New Delhi',
-    icon: ''
-  }
-];
+import { PROFILE_CONFIG } from '../../config/profile-config';
+import { ICertificationType } from '../../types/profile-config.types';
+const certificationList = PROFILE_CONFIG.CERTIFICATIONS;
 
 const CertificationsList = () => {
   return (
@@ -21,7 +10,7 @@ const CertificationsList = () => {
         <div className='header-title'>Certifications</div>
         <div className='heading-separator'></div>
         <div className='cus-list-box'>
-          {certificationList.map((cert) => {
+          {certificationList.map((cert: ICertificationType) => {
             return (
               <div className='cus-list-box-item' key={cert.id}>
                 {cert.icon && (

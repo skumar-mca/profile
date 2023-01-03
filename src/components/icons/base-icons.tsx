@@ -1,6 +1,7 @@
 import React from 'react';
+import { IBaseIconType } from '../../types/icon.types';
 
-const BaseIcon = (props: any) => {
+const BaseIcon = (props: IBaseIconType) => {
   const {
     width = 16,
     height = 16,
@@ -9,6 +10,7 @@ const BaseIcon = (props: any) => {
     d,
     d2
   } = props;
+
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

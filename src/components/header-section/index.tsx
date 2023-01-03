@@ -1,6 +1,8 @@
 import React, { memo } from 'react';
 import { THEME_CONSTANT } from '../../utils/app-constants';
+import { ImagePaths } from '../../utils/image-paths';
 import IconHalfCircle from '../icons/half-circle-icon';
+import IconLinkedin from '../icons/icon-linkedin';
 
 import './header.scss';
 
@@ -13,7 +15,7 @@ const HeaderSection = (props: any) => {
         <div className='row'>
           <div className='col-lg-2 col-md-5 col-sm-12 profile-img-container'>
             <img
-              src='assets/sunil.png'
+              src={ImagePaths.PROFILE.SUNIL}
               className='profile-img rounded-circle'
               alt='Sunil Kumar'
             />
@@ -23,34 +25,17 @@ const HeaderSection = (props: any) => {
             <h3>
               Sunil Kumar
               <div className='float-end'>
-                <div>
+                <div className='social-icon-list'>
                   <a
-                    className='social-name me-2'
+                    className='social-name me-2 icon-linkedin'
                     href='https://www.linkedin.com/in/sunil-kumar-83146843/'
                     rel='noreferrer'
                     target='_blank'
                     title='LinkedIn'
                   >
-                    <img
-                      alt='linkedin profile'
-                      className='rounded-img social-icon'
-                      src='assets/linkedin.png'
-                    />
+                    <IconLinkedin height={20} width={20} fillColor='white' />
                   </a>
-                  <a
-                    className='social-name me-2'
-                    href='https://www.facebook.com/profile.php?id=100002411178660'
-                    rel='noreferrer'
-                    target='_blank'
-                    title='Facebook'
-                  >
-                    <img
-                      alt='facebook profile'
-                      className='rounded-img social-icon'
-                      src='assets/facebook.png'
-                    />
-                  </a>
-                  <a
+                  {/* <a
                     className='social-name me-2'
                     href='https://www.npmjs.com/~skumar-mca2010'
                     target='_blank'
@@ -60,20 +45,20 @@ const HeaderSection = (props: any) => {
                     <img
                       alt='npm profile'
                       className='rounded-img social-icon'
-                      src='assets/npm.png'
+                      src={ImagePaths.SOCIAL.NPM}
                     />
-                  </a>
+                  </a> */}
 
                   <a
                     className='social-name '
                     download=''
-                    href='assets/SunilKumar.docx'
+                    href={ImagePaths.RESUME_DOC}
                     target='_blank'
                     rel='noreferrer'
                   >
                     <img
                       className='rounded-img social-icon'
-                      src='assets/download.png'
+                      src={ImagePaths.COMMON.DOWNLOAD}
                       title='Download resume'
                       alt='download resume'
                     />

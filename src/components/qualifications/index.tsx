@@ -1,19 +1,7 @@
 import React, { memo } from 'react';
-
-const qualificationList = [
-  {
-    id: 1,
-    name: 'Master of Computer Applications',
-    certifiedBy: 'Uttar Pradesh Technical University (UPTU)',
-    icon: 'assets/uptu.png'
-  },
-  {
-    id: 2,
-    name: 'Bachelor of Computer Applications',
-    certifiedBy: 'Agra University',
-    icon: 'assets/agra_university.png'
-  }
-];
+import { PROFILE_CONFIG } from '../../config/profile-config';
+import { IQualificationType } from '../../types/profile-config.types';
+const qualifications = PROFILE_CONFIG.QUALIFICATIONS;
 
 const QualificationList = () => {
   return (
@@ -22,7 +10,7 @@ const QualificationList = () => {
         <div className='header-title'>Qualifications</div>
         <div className='heading-separator'></div>
         <div className='cus-list-box'>
-          {qualificationList.map((qual) => {
+          {qualifications.map((qual: IQualificationType) => {
             return (
               <div className='cus-list-box-item' key={qual.id}>
                 <div className='cus-list-box-icon'>

@@ -1,9 +1,11 @@
+@import '../../scss/colors.scss';
+
 .header-title {
   font-weight: bold;
-  color: var(--section-title-color);
+  color: $sectionTitleColor;
   font-size: 1em;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .heading-separator {
@@ -17,11 +19,11 @@
   margin: 10px 0px 20px 0px;
   padding: 5px 10px 5px 10px;
   border-radius: 4px;
-  background-color: var(--light-gray-alt);
+  background-color: $lightGrayAlt;
 }
 
 .content-box:hover {
-  background: var(--hover-bg-color);
+  background: $hoverBgColor;
 }
 
 .emp-history {
@@ -62,9 +64,9 @@
 }
 
 .theme-dark .content-box {
-  background-color: var(--drk-theme-bg-alt) !important;
+  background-color: $drkThemeBgAlt !important;
 }
 
 .theme-dark .content-box:hover {
-  background-color: var(--drk-theme-hover) !important;
+  background-color: $drkThemeHover !important;
 }

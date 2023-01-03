@@ -6,6 +6,7 @@ import HeaderSection from '../header-section';
 import LeftSection from '../left-section';
 import PersonalInfo from '../personal-info';
 import QualificationList from '../qualifications';
+import ToolsUsed from '../tools-used';
 import './home.scss';
 
 const Home = () => {
@@ -42,7 +43,7 @@ const Home = () => {
         <div className='col-lg-4 col-md-12'>
           <CertificationsList />
           <QualificationList />
-          {/* <ToolsUsedList /> */}
+          <ToolsUsed />
           <PersonalInfo />
         </div>
       </div>

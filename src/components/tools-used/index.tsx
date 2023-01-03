@@ -1,31 +1,8 @@
 import React, { memo } from 'react';
+import { PROFILE_CONFIG } from '../../config/profile-config';
+import { IToolType } from '../../types/profile-config.types';
 
-const toolsList = [
-  {
-    id: 1,
-    name: 'Git/GitHub',
-    description: 'Most widely used modern version control system.',
-    icon: 'assets/git.png'
-  },
-  {
-    id: 2,
-    name: 'Atlassian Source Tree',
-    description: 'Graphical Interface for GIT',
-    icon: 'assets/source_tree.png'
-  },
-  {
-    id: 3,
-    name: 'Bitbucket',
-    description: 'Plan projects, collaborate on code, test, and deploy.',
-    icon: 'assets/bitbucket.png'
-  },
-  {
-    id: 4,
-    name: 'Jenkins',
-    description: 'The leading open source automation server.',
-    icon: 'assets/jenkins.png'
-  }
-];
+const toolsList = PROFILE_CONFIG.TOOLS;
 
 const ToolsUsedList = () => {
   return (
@@ -34,7 +11,7 @@ const ToolsUsedList = () => {
         <div className='header-title'>Tools Used</div>
         <div className='heading-separator'></div>
         <div className='cus-list-box'>
-          {toolsList.map((tool) => {
+          {toolsList.map((tool: IToolType) => {
             return (
               <div className='cus-list-box-item' key={tool.id}>
                 <div className='cus-list-box-icon'>
