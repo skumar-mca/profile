@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/profile?source=pwa",
+  "start_url": "/profile",
   "background_color": "#3367D6",
   "display": "standalone",
   "scope": "/profile",
@@ -23,7 +23,7 @@
       "name": "Sunil Kumar",
       "short_name": "Sunil Kumar",
       "description": "Sunil Kumar - Profile",
-      "url": "/profile?source=pwa",
+      "url": "/profile",
       "icons": [
         {
           "src": "sunil.png",
@@ -32,27 +32,5 @@
       ]
     }
   ],
-  "description": "MCA, 11+ Years, React, Redux, Angular, Node, MEAN, MERN",
-  "screenshots": [
-    {
-      "src": "screenshot-1.png",
-      "type": "image/png",
-      "sizes": "540x720"
-    },
-    {
-      "src": "screenshot-2.png",
-      "type": "image/jpg",
-      "sizes": "540x720"
-    },
-    {
-      "src": "screenshot-3.png",
-      "type": "image/jpg",
-      "sizes": "540x720"
-    },
-    {
-      "src": "screenshot-4.png",
-      "type": "image/jpg",
-      "sizes": "540x720"
-    }
-  ]
+  "description": "MCA, 11+ Years, React, Redux, Angular, Node, MEAN, MERN"
 }
