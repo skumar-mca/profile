@@ -228,7 +228,7 @@ export const PROFILE_CONFIG: IProfileConfigType = {
   ],
   ADDITIONAL_SKILLS: [
     {
-      id: 2,
+      id: 1,
       name: 'HTML'
     },
     {
@@ -236,56 +236,56 @@ export const PROFILE_CONFIG: IProfileConfigType = {
       name: 'OOJS'
     },
     {
-      id: 2,
+      id: 3,
       name: 'JSON'
     },
     {
-      id: 2,
+      id: 4,
       name: 'AJAX'
     },
     {
-      id: 2,
+      id: 5,
       name: 'CSS Flex Box'
     },
     {
-      id: 2,
+      id: 6,
       name: 'CSS Grid'
     },
 
     {
-      id: 5,
+      id: 7,
       name: 'Webpack'
     },
     {
-      id: 6,
+      id: 8,
       name: 'Jest'
     },
     {
-      id: 6,
+      id: 9,
       name: 'Enzyme'
     },
     {
-      id: 7,
+      id: 10,
       name: 'Redis'
     },
     {
-      id: 2,
+      id: 11,
       name: 'Responsive Designing'
     },
     {
-      id: 2,
+      id: 12,
       name: 'Cross Browser Development'
     },
     {
-      id: 3,
+      id: 13,
       name: 'Web Accessibility'
     },
     {
-      id: 4,
+      id: 14,
       name: 'Internationalization'
     },
     {
-      id: 4,
+      id: 15,
       name: 'PWA'
     }
   ],
