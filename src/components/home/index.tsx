@@ -1,7 +1,6 @@
 import React, { memo, useEffect, useState } from 'react';
 import { THEME_CONSTANT } from '../../utils/app-constants';
 import { THEME } from '../../utils/util';
-import CertificationsList from '../certifications';
 import HeaderSection from '../header-section';
 import LeftSection from '../left-section';
 import PersonalInfo from '../personal-info';
@@ -41,7 +40,7 @@ const Home = () => {
         </div>
 
         <div className='col-lg-4 col-md-12'>
-          <CertificationsList />
+          {/* <CertificationsList /> */}
           <QualificationList />
           <ToolsUsed />
           <PersonalInfo />
