@@ -4,7 +4,7 @@ import { ImagePaths } from './image-paths';
 export const THEME = {
   getTheme: () => {
     return (
-      localStorage.getItem(THEME_CONSTANT.KEY) || THEME_CONSTANT.LIGHT_THEME
+      localStorage.getItem(THEME_CONSTANT.KEY) || THEME_CONSTANT.DARK_THEME
     );
   },
   setTheme: (themeValue: string) => {
