@@ -15,29 +15,36 @@
   margin-right: 30px;
 }
 
-.additional-skills-box {
-  gap: 10px;
+.additional-skills {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-
-  .add-skill-item {
+  flex-direction: column;
+  .additional-skills-box {
+    gap: 10px;
     display: flex;
-    align-items: center;
-    background-color: $lightGrayAlt;
-    padding: 5px 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    flex-basis: content;
+    flex: 1 1 100px;
 
-    &:hover {
-      background-color: $hoverBgColor;
-      border-radius: 4px;
-    }
+    .add-skill-item {
+      flex-grow: inherit;
+      display: flex;
+      align-items: center;
+      background-color: $lightGrayAlt;
+      padding: 5px 10px;
 
-    .item-title {
-      font-weight: bold;
-      font-size: 0.8em;
-      margin-bottom: 2px;
-      color: $textColor;
+      &:hover {
+        background-color: $hoverBgColor;
+        border-radius: 4px;
+      }
+
+      .item-title {
+        font-weight: bold;
+        font-size: 0.8em;
+        margin-bottom: 2px;
+        color: $textColor;
+      }
     }
   }
 }

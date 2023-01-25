@@ -69,7 +69,7 @@ const SkillList = () => {
         </div>
 
         {additionalSkills && (
-          <>
+          <div className='additional-skills'>
             <div className='header-title'>Additional Skills</div>
             <div className='heading-separator'></div>
             <div className='additional-skills-box'>
@@ -83,7 +83,7 @@ const SkillList = () => {
                 );
               })}
             </div>
-          </>
+          </div>
         )}
       </div>
     </div>

@@ -229,64 +229,91 @@ export const PROFILE_CONFIG: IProfileConfigType = {
   ADDITIONAL_SKILLS: [
     {
       id: 1,
-      name: 'HTML'
+      name: 'UI/UX'
     },
     {
       id: 2,
-      name: 'OOJS'
+      name: 'JAMStack'
     },
     {
       id: 3,
-      name: 'JSON'
+      name: 'HTML'
     },
     {
       id: 4,
-      name: 'AJAX'
+      name: 'OOJS'
     },
     {
       id: 5,
-      name: 'CSS Flex Box'
+      name: 'JSON'
     },
     {
       id: 6,
-      name: 'CSS Grid'
+      name: 'AJAX'
     },
-
     {
       id: 7,
-      name: 'Webpack'
+      name: 'CSS Flex Box'
     },
     {
       id: 8,
-      name: 'Jest'
+      name: 'CSS Grid'
     },
     {
       id: 9,
-      name: 'Enzyme'
+      name: 'Styled Components'
     },
     {
       id: 10,
-      name: 'Redis'
+      name: 'Web Components'
     },
     {
       id: 11,
-      name: 'Responsive Designing'
+      name: 'Lit Web Components'
     },
     {
       id: 12,
-      name: 'Cross Browser Development'
+      name: 'Webpack'
     },
     {
       id: 13,
-      name: 'Web Accessibility'
+      name: 'Redis'
     },
     {
       id: 14,
-      name: 'Internationalization'
+      name: 'Responsive Designing'
     },
     {
       id: 15,
+      name: 'Cross Browser Development'
+    },
+    {
+      id: 16,
+      name: 'Web Accessibility'
+    },
+    {
+      id: 17,
+      name: 'Internationalization'
+    },
+    {
+      id: 18,
       name: 'PWA'
+    },
+    {
+      id: 19,
+      name: 'SEO'
+    },
+    {
+      id: 20,
+      name: 'Web Analytics'
+    },
+    {
+      id: 21,
+      name: 'Jest'
+    },
+    {
+      id: 22,
+      name: 'Enzyme'
     }
   ],
   CERTIFICATIONS: [
